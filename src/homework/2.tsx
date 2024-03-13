@@ -1,12 +1,12 @@
 import { type } from "@testing-library/user-event/dist/type";
-import React, {useReducer} from "react";
-type State ={
+import React, { useReducer } from "react";
+type State = {
   isRequestInProgress: boolean;
-  requestStep: string; 
+  requestStep: string;
 }
 
 type Action = {
-  type: string;
+  type: 'START_REQUEST' | 'PENDING_REQUEST' | 'FINISH_REQUEST' | 'RESET_REQUEST';
   // payload: string; 
 }
 
